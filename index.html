@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet"
+    href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="">
+      <!-- NAVBAR -->
+      <section>
+        <nav class="flex flex-row justify-between p-5 content-center">
+          <a href="#" class="">
+            <h2 class="text-blue-950 font-bold text-3xl">SnazzyEstate</h2>
+          </a>
+          <div class="hidden md:flex" id="nav">
+            <ul class="flex w-80 justify-between items-center">
+              <li class="">
+                <a href="#" class="hover:text-blue-700">Home</a>
+              </li>
+              <li class="">
+                <a href="#" class="hover:text-blue-700">About Us</a>
+              </li>
+              <li class="">
+                <a href="#" class="hover:text-blue-700">Estate</a>
+              </li>
+              <li class="">
+                <a href="#" class="hover:text-blue-700">Blog</a>
+              </li>
+              <li class="">
+                <a href="#" class="hover:text-blue-700">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button
+              class="md:hidden border border-blue-900 text-blue-900 py-2 px-5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+            <button
+              type="button"
+              class="hidden md:block border px-6 py-2 border-blue-700 text-blue-700 font-bold hover:bg-blue-950 hover:text-white"
+            >
+              Contact
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <!-- SLIDER -->
+      <section>
+        <div id="slider">
+          <div class="h-full flex justify-center items-center">
+            <div class="flex flex-col text-center">
+              <h1 class="text-5xl md:text-7xl mb-4 text-white">
+                Your Perfect Property
+              </h1>
+              <h2 class="text-2xl text-white">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SEARCH BAR -->
+      <section
+        id="search-bar"
+        class="flex flex-col -mt-20 mx-8 md:mx-36 items-center md:items-start shadow-lg bg-white justify-center md:mb-5"
+      >
+        <div>
+          <button class="border-0 py-3 px-4 text-blue-900">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              />
+            </svg>
+            House
+          </button>
+          <button class="border-0 py-3 px-4 hover:text-blue-900">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"
+              />
+            </svg>
+
+            Apartment
+          </button>
+        </div>
+        <div class="md:flex items-center justify-between w-full">
+          <div class="md:flex flex-wrap p-5">
+            <div>
+              <input
+                id="location"
+                type="text"
+                class="py-4 px-5 border-e-2 outline-0 w-full"
+                placeholder="House Location"
+              />
+            </div>
+            <div>
+              <input
+                id="location"
+                type="text"
+                class="py-4 px-5 border-e-2 outline-0 w-full"
+                placeholder="Dimension"
+              />
+            </div>
+            <div>
+              <input
+                id="location"
+                type="text"
+                class="py-4 px-5 border-e-2 outline-0 w-full"
+                placeholder="Price"
+              />
+            </div>
+          </div>
+          <div class="text-center">
+            <button
+              type="button"
+              class="mb-3 md:mb-0 bg-blue-800 py-3 px-6 text-white border border-blue-800 md:me-8 hover:bg-white hover:text-blue-800"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- BENEFITS -->
+      <section class="flex flex-col items-center py-14">
+        <div>
+          <h3 class="text-xl font-bold">Discover our unique benefits</h3>
+        </div>
+        <div
+          class="flex flex-wrap md:flex-nowrap w-full md:w-11/12 md:justify-between"
+        >
+          <div
+            class="flex flex-col justify-center items-center text-center m-auto py-12 w-4/5"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-10 h-10 text-blue-900"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              />
+            </svg>
+            <h1 class="text-2xl font-bold mb-2">Rich choice</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
+              asperiores!
+            </p>
+          </div>
+          <div class="line"></div>
+          <div
+            class="flex flex-col justify-center items-center text-center m-auto py-12 w-4/5"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-10 h-10 text-blue-900"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+              />
+            </svg>
+
+            <h1 class="text-2xl font-bold mb-2">Safe transactions</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
+              asperiores!
+            </p>
+          </div>
+          <div class="line"></div>
+          <div
+            class="flex flex-col justify-center items-center text-center m-auto py-12 w-4/5"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-10 h-10 text-blue-900"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z"
+              />
+            </svg>
+
+            <h1 class="text-2xl font-bold mb-2">Rich choice</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
+              asperiores!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- HISTORY -->
+      <section
+        class="flex flex-col md:flex-row items-center w-11/12 md:w-5/6 mx-auto justify-around"
+      >
+        <div class="w-full sm:w-1/2">
+          <img src="images/person.png" class="m-auto" alt="person-image" />
+        </div>
+        <div
+          class="flex flex-col w-full md:w-1/2 items-center md:items-start md:ml-8 text-center md:text-start my-4 md:my-0"
+        >
+          <h1 class="font-bold text-2xl">Our history and mission</h1>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            ut unde similique eligendi quaerat reiciendis voluptate architecto.
+            Error, nobis repudiandae. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Sed inventore nisi deserunt cumque enim? Maxime
+            accusamus aliquam rem! Fugiat, quos!
+          </p>
+          <button
+            class="my-3 bg-blue-800 py-3 px-6 text-white border border-blue-800 md:me-8 hover:bg-white hover:text-blue-800"
+          >
+            Find out more
+          </button>
+        </div>
+      </section>
+      <!-- PROPERTIES -->
+      <section class="flex flex-col items-center my-20">
+        <div>
+          <h1 class="text-2xl font-bold mb-8">Available Properties</h1>
+        </div>
+        <div>
+          <button
+            class="bg-inherit outline-none cursor-pointer py-3 px-4 text-sm hover:text-blue-800 text-blue-800"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline-block"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+              />
+            </svg>
+
+            All
+          </button>
+          <button
+            class="bg-inherit outline-none cursor-pointer py-3 px-4 text-sm hover:text-blue-800"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              />
+            </svg>
+            House
+          </button>
+          <button
+            class="bg-inherit outline-none cursor-pointer py-3 px-4 text-sm hover:text-blue-800"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"
+              />
+            </svg>
+            Apartment
+          </button>
+        </div>
+        <div class="clear-both border border-gray-400 w-10/12 mb-2"></div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 md:w-10/12 lg:grid-cols-3 lg:w-10/12 gap-8 w-11/12"
+        >
+          <div class="flex flex-col border border-gray-300 rounded-md">
+            <img src="./images/1.png" alt="" />
+            <p class="mx-3 mt-3">New York, USA</p>
+            <h1 class="m-3 font-bold text-xl">Luxury Property</h1>
+            <p class="m-3=2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                />
+              </svg>
+
+              4 Bedrooms
+            </p>
+            <div class="flex justify-between mt-7 mx-3 mb-3 items-center">
+              <h3 class="font-bold">$1.200.000</h3>
+              <button
+                class="border py-2 px-4 border-blue-800 text-blue-800 hover:text-white hover:bg-blue-900"
+              >
+                See more
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col border border-gray-300 rounded-md">
+            <img src="./images/2.png" alt="" />
+            <p class="mx-3 mt-3">New York, USA</p>
+            <h1 class="m-3 font-bold text-xl">Luxury Property</h1>
+            <p class="m-3=2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                ></path>
+              </svg>
+
+              4 Bedrooms
+            </p>
+            <div class="flex justify-between mt-7 mx-3 mb-3 items-center">
+              <h3 class="font-bold">$1.200.000</h3>
+              <button
+                class="border py-2 px-4 border-blue-800 text-blue-800 hover:text-white hover:bg-blue-900"
+              >
+                See more
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col border border-gray-300 rounded-md">
+            <img src="./images/3.png" alt="" />
+            <p class="mx-3 mt-3">New York, USA</p>
+            <h1 class="m-3 font-bold text-xl">Luxury Property</h1>
+            <p class="m-3=2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                ></path>
+              </svg>
+
+              4 Bedrooms
+            </p>
+            <div class="flex justify-between mt-7 mx-3 mb-3 items-center">
+              <h3 class="font-bold">$1.200.000</h3>
+              <button
+                class="border py-2 px-4 border-blue-800 text-blue-800 hover:text-white hover:bg-blue-900"
+              >
+                See more
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col border border-gray-300 rounded-md">
+            <img src="./images/4.png" alt="" />
+            <p class="mx-3 mt-3">New York, USA</p>
+            <h1 class="m-3 font-bold text-xl">Luxury Property</h1>
+            <p class="m-3=2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                ></path>
+              </svg>
+
+              4 Bedrooms
+            </p>
+            <div class="flex justify-between mt-7 mx-3 mb-3 items-center">
+              <h3 class="font-bold">$1.200.000</h3>
+              <button
+                class="border py-2 px-4 border-blue-800 text-blue-800 hover:text-white hover:bg-blue-900"
+              >
+                See more
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col border border-gray-300 rounded-md">
+            <img src="./images/5.png" alt="" />
+            <p class="mx-3 mt-3">New York, USA</p>
+            <h1 class="m-3 font-bold text-xl">Luxury Property</h1>
+            <p class="m-3=2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                ></path>
+              </svg>
+
+              4 Bedrooms
+            </p>
+            <div class="flex justify-between mt-7 mx-3 mb-3 items-center">
+              <h3 class="font-bold">$1.200.000</h3>
+              <button
+                class="border py-2 px-4 border-blue-800 text-blue-800 hover:text-white hover:bg-blue-900"
+              >
+                See more
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col border border-gray-300 rounded-md">
+            <img src="./images/6.png" alt="" />
+            <p class="mx-3 mt-3">New York, USA</p>
+            <h1 class="m-3 font-bold text-xl">Luxury Property</h1>
+            <p class="m-3=2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                ></path>
+              </svg>
+
+              4 Bedrooms
+            </p>
+            <div class="flex justify-between mt-7 mx-3 mb-3 items-center">
+              <h3 class="font-bold">$1.200.000</h3>
+              <button
+                class="border py-2 px-4 border-blue-800 text-blue-800 hover:text-white hover:bg-blue-900"
+              >
+                See more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="properties-container-btn">
+          <button
+            class="my-3 bg-blue-800 py-3 px-6 text-white border border-blue-800 md:me-8 hover:bg-white hover:text-blue-800"
+          >
+            See more
+          </button>
+        </div>
+      </section>
+      <!-- OPINIONS -->
+      <section class="bg-slate-100">
+        <div
+          class="flex justify-center w-10/12 m-auto pt-20 pb-12 flex-row md:justify-between items-center"
+        >
+          <h1 class="font-bold text-2xl">Customers opinions</h1>
+          <div class="hidden md:flex w-2/12 justify-between">
+            <button
+              class="py-4 px-6 bg-inherit cursor-pointer border border-gray-400"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button
+              class="py-4 px-6 bg-inherit cursor-pointer border border-gray-400"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row mb-3 w-5/6 m-auto justify-between"
+        >
+          <div
+            class="flex w-full md:w-8/12 items-center md:items-start flex-col mb-5"
+          >
+            <div class="stars">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+            </div>
+            <p class="text-center md:text-start">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
+              recusandae cupiditate, culpa explicabo ve dolor, sit amet
+              consectetur adipisicing elit. Id, eligendi!"
+            </p>
+          </div>
+          <div
+            class="flex w-full md:w-8/12 items-center md:items-start flex-col mb-5"
+          >
+            <div class="stars">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+            </div>
+            <p class="text-center md:text-start">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
+              recusandae cupiditate, culpa explica dolor, sit amet consectetur
+              adipisicing elit. Id, eligendi!"
+            </p>
+          </div>
+          <div
+            class="flex w-full md:w-8/12 items-center md:items-start flex-col mb-5"
+          >
+            <div class="stars">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block text-yellow-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+            </div>
+            <p class="text-center md:text-start">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
+              recusandae cupiditate, culpa explicabo dolor, sit amet consectetur
+              adipisicing elit. Id, eligendi!"
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- BLOG -->
+      <section class="flex flex-col items-center my-20">
+        <div>
+          <h1 class="text-2xl font-bold mb-8">Blog</h1>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 md:w-10/12 lg:grid-cols-3 lg:w-10/12 gap-8 w-11/12"
+        >
+          <div class="flex flex-col">
+            <img src="./images/1.png" alt="" />
+            <p class="mx-3 mt-3">New York, USA</p>
+            <h1 class="m-3 font-bold">Luxury Property</h1>
+            <p class="m-3=2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                ></path>
+              </svg>
+
+              4 Bedrooms
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <img src="./images/5.png" alt="" />
+            <p class="mx-3 mt-3">New York, USA</p>
+            <h1 class="m-3 font-bold">Luxury Property</h1>
+            <p class="m-3=2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                ></path>
+              </svg>
+
+              4 Bedrooms
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <img src="./images/3.png" alt="" />
+            <p class="mx-3 mt-3">New York, USA</p>
+            <h1 class="m-3 font-bold">Luxury Property</h1>
+            <p class="m-3=2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline-block"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                ></path>
+              </svg>
+
+              4 Bedrooms
+            </p>
+          </div>
+        </div>
+        <div class="properties-container-btn">
+          <button
+            class="mt-20 bg-blue-800 py-3 px-6 text-white border border-blue-800 md:me-8 hover:bg-white hover:text-blue-800"
+          >
+            See more
+          </button>
+        </div>
+      </section>
+      <!-- CONTACT US -->
+      <section class="py-10 bg-blue-900">
+        <div class="flex flex-col md:flex-row w-11/12 items-center m-auto">
+          <div class="w-full md:w-1/2 text-center mb-5">
+            <h1 class="text-white font-bold text-xl md:text-2xl md:text-start">
+              Have questions? Connect us <br />
+              by E-mail or telephone.
+            </h1>
+          </div>
+          <div class="flex flex-col md:flex-row md:w-1/2 justify-center">
+            <button
+              class="bg-inherit border border-white text-white py-4 px-2 mb-3 md:mb-0 md:mr-3 hover:bg-white hover:text-black"
+            >
+              <i class="fa-solid fa-phone"></i>
+              111 222 3333
+            </button>
+            <button class="bg-black border border-black text-white py-4 px-2 hover:bg-white hover:text-black">
+              <i class="fa-solid fa-envelope"></i>
+              snazzy@estate.com
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-black py-14">
+      <div
+        class="flex flex-col md:flex-row w-11/12 md:w-10/12 justify-between m-auto items-center"
+      >
+        <div
+          class="md:w-1/3 w-10/12 text-center md:text-start text-white mb-5 md:mb-0"
+        >
+          <h1 class="mb-3 font-bold text-2xl">SnazzyEstate</h1>
+          <p class="text-gray-400 text-xl mb-8">
+            We are a loading real estate company Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Reiciendis, eaque.
+          </p>
+          <select
+            name="languages"
+            id="languages"
+            class="py-3 px-10 bg-inherit border cursor-pointer hover:text-black hover:bg-white"
+          >
+            <option class="text-white bg-gray-600" value="English">
+              English
+            </option>
+            <option class="text-white bg-gray-600" value="Arabic">
+              العربیه
+            </option>
+            <option class="text-white bg-gray-600" value="Persian">
+              فارسی
+            </option>
+          </select>
+        </div>
+        <div
+          class="flex md:flex-row flex-col md:w-3/5 w-10/12 justify-between text-white"
+        >
+          <div>
+            <h1 class="font-bold text-xl">Our company</h1>
+            <ul class="text-gray-500 mt-5">
+              <li class="mb-5 text-xl cursor-pointer hover:text-blue-600">
+                About us
+              </li>
+              <li class="mb-5 text-xl cursor-pointer hover:text-blue-600">
+                Services
+              </li>
+              <li class="mb-5 text-xl cursor-pointer hover:text-blue-600">
+                Offers
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 class="font-bold text-xl">Contact</h1>
+            <ul class="text-gray-500 mt-5">
+              <li class="mb-5 text-xl cursor-pointer hover:text-blue-600">
+                Agents
+              </li>
+              <li class="mb-5 text-xl cursor-pointer hover:text-blue-600">
+                Blog
+              </li>
+              <li class="mb-5 text-xl cursor-pointer hover:text-blue-600">
+                Contact
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 class="font-bold text-xl">Additional information</h1>
+            <ul class="text-gray-500 mt-5">
+              <li class="mb-5 text-xl cursor-pointer hover:text-blue-600">
+                Customers opinion
+              </li>
+              <li class="mb-5 text-xl cursor-pointer hover:text-blue-600">
+                Lorem ipsum dolor sit
+              </li>
+              <li class="mb-5 text-xl cursor-pointer hover:text-blue-600">
+                adipisicing elit
+              </li>
+              <li class="mb-5 text-xl cursor-pointer hover:text-blue-600">
+                adipisicing elit
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex md:flex-row flex-col w-10/12 justify-between mt-24 text-white m-auto"
+      >
+        <p class="text-gray-600 text-xl">
+          <i class="fa-sharp fa-solid fa-copyright"></i>
+          2023 snazzystudio.co
+        </p>
+        <div class="font-bold md:text-xl my-3 md:my-0">
+          <a href="#"> <i class="fa-brands fa-facebook"></i> Facebook </a>
+          <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram </a>
+          <a href="#"> <i class="fa-brands fa-twitter"></i> Twitter </a>
+        </div>
+        <p class="text-gray-600 text-xl">Privacy policy</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
